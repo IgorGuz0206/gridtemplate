@@ -1,0 +1,11 @@
+%container {
+    max-width: $ul;
+    margin: auto;
+    padding-right: $gap;
+    padding-left: $gap;
+}
+
+%actions {
+    display: flex;
+    justify-content: center;
+}
