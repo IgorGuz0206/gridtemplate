@@ -39,11 +39,25 @@
       margin-top: -5px;
     }
     p:first-of-type::after {
-      background-color: rgba(99, 117, 136, 0.1);
+      background-color: #637588;
+      opacity: 0.1;
       position: absolute;
       top: 0;
       height: 200px;
       width: 2px;
+      content: "";
+      @include lg-min {
+        right: -50px;
+      }
+      @include lg-md {
+        right: -20px;
+      }
+      @include md-sm {
+        right: -10px;
+      }
+      @include sm {
+        display: none;
+      }
     }
     p:last-of-type {
       margin: 0;
